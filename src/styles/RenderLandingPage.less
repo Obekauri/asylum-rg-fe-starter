@@ -41,17 +41,79 @@
     font-size: 1.2rem;
 }
 
-// .graphs-section {
-//  ADD THIS BACK IN WHEN YOU HAVE THE GRAPHS SECTION
-// }
+.Header_Image {
+    size: 100px;
+}
 
+.gr-office-img {
+    height: 165px;
+    width: 320px;
+    margin-bottom: 10%;
+}
+
+.gr-overtime-img {
+    height: 165px;
+    width: 300px;
+    margin-bottom: 10%;
+}
+
+
+// Graph Effects Added
+
+.graphs-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.grant-rates-by-office-graph-container {
+    text-align: center;
+    height: 165px;
+    font-size: 1.5rem;
+    font-family: "acumin";
+    margin-bottom: 3%;
+}
+
+.grant-rates-over-time-container {
+    text-align: center;
+    height: 165px;
+    font-size: 1.5rem;
+    font-family: "acumin";
+    margin-bottom: 3%;
+}
+
+.grant-rates-by-nationality-container {
+    text-align: center;
+    margin-bottom: 3%;
+    margin-left: -15px;
+    font-size: 1.5rem;
+    font-family: "acumin";
+}
+
+.gr-nationality-img {
+    height: 175px;
+    width: 200px;
+    margin-bottom: 7%;
+    margin-left: -15px;
+}
+
+// Modified
 .view-more-data-btn-container {
     height: 44px;
-    width: 180px;
+
+    // Width increased to 300 pixel
+    width: 300px;
+    
     margin: 0 auto;
     text-align: center;
     margin-bottom: 10%;
+
+    // Add new code for space betweeen
+    display: flex;
+    justify-content: space-between;
 }
+
+// Ends here
+//============================
 
 .middle-section {
     display: flex;
@@ -75,9 +137,46 @@
     font-size: 1.4rem;
 }
 
-// .bottom-section {
-//      ADD THIS BACK IN WHEN YOU HAVE A BOTTOM SECTION
-// }
+
+// Bottom Section added code
+
+.bottom-section {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.bottom-section h1 {
+    font-family: "moneta";
+    font-size: 3.5rem;
+    margin-bottom: 10%;
+}
+
+.data-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5%;
+}
+
+.first-data-point-container, 
+.second-data-point-container,
+.third-data-point-container {
+    width: 433px;
+    font-family: "acumin";
+    font-size: 1.025rem;
+}
+
+.first-data-point-container h2,
+.second-data-point-container h2,
+.third-data-point-container h2 {
+    font-family: "beatrice_regular";
+    font-size: 3rem;
+}
+
+
+
+// Ends here
+// =====================
+
 
 .back-to-top {
     width: 8%;
@@ -105,7 +204,7 @@
        position: relative;
     }
     .hrf-logo-img-container{
-       height:fit-content;
+       height: fit-content;
        position: absolute;
        top: 0;
        left: 0;
@@ -597,6 +696,26 @@
     .grant-rates-by-office-graph-container p {
         font-size: 2.5rem;
     }
+
+    // Bellow Graphs Effects Added here 
+
+    .gr-office-img {
+        height: 232px;
+        width: 450px;
+    }
+
+    .gr-nationality-img {
+        margin-bottom: 8%;
+        height: 335px;
+        width: 383px;
+    }
+
+    .grant-rates-over-time-container {
+        margin-bottom: 40%;
+    }
+
+    // Ends Here
+    // =======================
 
     .gr-office-img {
         height: 232px;

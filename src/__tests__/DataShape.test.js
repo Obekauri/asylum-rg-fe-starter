@@ -1,6 +1,8 @@
-import { data } from '../data/data';
+import data from '../data/test_data.json';
 import { render, screen } from '@testing-library/react';
-import TableContainer from '../components/pages/Table/TableContainer';
+import TableContainer from '../components/pages/Landing/RenderLandingPage';
+
+console.log(data[0]);
 
 describe('Asylum Office is a string', () => {
   test('[1] asylumOffice is a string', () => {
