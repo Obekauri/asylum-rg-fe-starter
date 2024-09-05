@@ -31,19 +31,23 @@ function RenderLandingPage(props) {
       </div>
 
       <div className="graphs-section">
+
         <div className="grant-rates-by-office-graph-container">
           <img src={GrantRatesByOfficeImg} alt="Grant Rates By Office Graph" className="gr-office-img" />
           <p>Search Grant Rates By Office</p>
         </div>
+
         <div className="grant-rates-by-nationality-container">
           <img src={GrantRatesByNationalityImg} alt="Grant Rates By Nationality Graph" className="gr-nationality-img" />
           <p>Search Grant Rates By Nationality</p>
         </div>
+
         <div className="grant-rates-over-time-container">
           <img src={GrantRatesOverTimeImg} alt="Grant Rates Over Time Graph" className="gr-overtime-img" />
           <p>Search Grant Rates Over Time</p>
         </div>
       </div>
+
       <div className="view-more-data-btn-container">
         <Button
           type="default"
@@ -52,9 +56,10 @@ function RenderLandingPage(props) {
         >
           View the Data
         </Button>
+        
         <a href="https://humanrightsfirst.org/wp-content/uploads/2022/10/COW2021001887-I589Data.csv">
           <div className="read-more-btn"> 
-            <button type="button" className="ant-btn ant-btn-default" style={{ backgroundColor: 'rgb(64, 76, 74)', color: 'rgb(255, 255, 255)' }}>
+            <button type="button" className="ant-btn ant-btn-default" style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}>
               <span>
                 Download the Data
               </span>
@@ -120,18 +125,17 @@ function RenderLandingPage(props) {
                 <button 
                   type="button" 
                   className="ant-btn ant-btn-default"
-                  style={{ backgroundColor: 'rgb(64, 76, 74)', color: 'rgb(255, 255, 255)' }}>
+                  style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}>
                     <span>
                       Read More
                     </span>
                 </button>
               </div>
-            </a>
-          
+          </a>
+          <p onClick={() => scrollToTop()} className="back-to-top">
+            Back To Top ^
+          </p>  
         </div>
-        <p onClick={() => scrollToTop()} className="back-to-top">
-          Back To Top ^
-        </p>
       </div>
     </div>
   );
