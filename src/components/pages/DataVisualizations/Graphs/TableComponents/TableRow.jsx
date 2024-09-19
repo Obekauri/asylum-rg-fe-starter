@@ -16,7 +16,7 @@ function TableRow(props) {
         overflow: 'hidden',
       }}
     >
-      {columns.map((property, idx) => {
+      {columns.map((property, idx) => { // eslint-disable-line
         if (row) {
           if (typeof row[property] === 'object') {
             return (

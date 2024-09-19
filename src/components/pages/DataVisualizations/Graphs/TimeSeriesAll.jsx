@@ -16,12 +16,15 @@ function TimeSeriesAll(props) {
   const { timeSeriesAllData } = props;
   const currentYear = new Date().getFullYear();
   const [rowsForAllDisplay, setRowsForAllDisplay] = useState([]);
+
+  // Aded some columns
   const columnsForAllDisplay = [
     'Fiscal Year',
     'Total Cases',
-    '% Granted',
-    '% Admin Close / Dismissal',
-    '% Denied',
+    'Grants',
+    'Referrals / Denials',
+    'Admin Closed / Dismissals',
+    'Granted Rate',
   ];
   useEffect(() => {
     if (timeSeriesAllData.rowsForAllDisplay === undefined) {
