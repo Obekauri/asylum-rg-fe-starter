@@ -2,8 +2,6 @@ import data from '../data/test_data.json';
 import { render, screen } from '@testing-library/react';
 import TableContainer from '../components/pages/Landing/RenderLandingPage';
 
-console.log(data[0]);
-
 describe('Asylum Office is a string', () => {
   test('[1] asylumOffice is a string', () => {
     expect(typeof data.asylumOffice).toBe('string');

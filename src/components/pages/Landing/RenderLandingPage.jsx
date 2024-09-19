@@ -33,17 +33,29 @@ function RenderLandingPage(props) {
       <div className="graphs-section">
 
         <div className="grant-rates-by-office-graph-container">
-          <img src={GrantRatesByOfficeImg} alt="Grant Rates By Office Graph" className="gr-office-img" />
+          <img 
+            src={GrantRatesByOfficeImg} 
+            alt="Grant Rates By Office Graph" 
+            className="gr-office-img" 
+          />
           <p>Search Grant Rates By Office</p>
         </div>
 
         <div className="grant-rates-by-nationality-container">
-          <img src={GrantRatesByNationalityImg} alt="Grant Rates By Nationality Graph" className="gr-nationality-img" />
+          <img
+            src={GrantRatesByNationalityImg}
+            alt="Grant Rates By Nationality Graph" 
+            className="gr-nationality-img" 
+          />
           <p>Search Grant Rates By Nationality</p>
         </div>
 
         <div className="grant-rates-over-time-container">
-          <img src={GrantRatesOverTimeImg} alt="Grant Rates Over Time Graph" className="gr-overtime-img" />
+          <img 
+            src={GrantRatesOverTimeImg} 
+            alt="Grant Rates Over Time Graph" 
+            className="gr-overtime-img" 
+          />
           <p>Search Grant Rates Over Time</p>
         </div>
       </div>
@@ -59,7 +71,11 @@ function RenderLandingPage(props) {
         
         <a href="https://humanrightsfirst.org/wp-content/uploads/2022/10/COW2021001887-I589Data.csv">
           <div className="read-more-btn"> 
-            <button type="button" className="ant-btn ant-btn-default" style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}>
+            <button 
+              type="button" 
+              className="ant-btn ant-btn-default" 
+              style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
+            >
               <span>
                 Download the Data
               </span>
@@ -87,7 +103,9 @@ function RenderLandingPage(props) {
       <div>
 
         <div className="bottom-section">
+          
           <h1>Systemic Disparity Insights</h1>
+
           <div className="data-container">
 
             <div className="first-data-point-container">
@@ -118,6 +136,7 @@ function RenderLandingPage(props) {
             </div>
 
           </div>
+
           <a 
             href="https://humanrightsfirst.org/library/uscis-records-reveal-systemic-disparities-in-asylum-decisions/" 
             target="_blank" rel="noreferrer">
@@ -125,16 +144,19 @@ function RenderLandingPage(props) {
                 <button 
                   type="button" 
                   className="ant-btn ant-btn-default"
-                  style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}>
+                  style={{ backgroundColor: '#404C4A', color: '#FFFFFF' }}
+                >
                     <span>
                       Read More
                     </span>
                 </button>
               </div>
           </a>
+
           <p onClick={() => scrollToTop()} className="back-to-top">
             Back To Top ^
-          </p>  
+          </p>
+
         </div>
       </div>
     </div>
