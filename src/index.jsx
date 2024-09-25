@@ -6,6 +6,9 @@ import {
   // useHistory,
   Switch,
 } from 'react-router-dom';
+import { Auth0Provider } from '@auth0/auth0-react';
+
+import Profile from './components/common/Profile';
 
 import 'antd/dist/antd.less';
 import { NotFoundPage } from './components/pages/NotFound';
@@ -24,13 +27,21 @@ import reducer from './state/reducers';
 import { colors } from './styles/data_vis_colors';
 
 const { primary_accent_color } = colors;
+const domain = process.env.REACT_APP_AUTH0_DOMAIN;
+const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
 
 const store = configureStore({ reducer: reducer });
 ReactDOM.render(
   <Router>
     <Provider store={store}>
       <React.StrictMode>
-        <App />
+        <Auth0Provider
+          domain={domain}
+          clientId={clientId}
+          redirectUri={window.location.origin}
+        >
+          <App />
+        </Auth0Provider>
       </React.StrictMode>
     </Provider>
   </Router>,
@@ -54,6 +65,7 @@ export function App() {
       <Switch>
         <Route path="/" exact component={LandingPage} />
         <Route path="/graphs" component={GraphsContainer} />
+        <Route path="/profile" exact component={Profile} />
         <Route component={NotFoundPage} />
       </Switch>
       <Footer
